@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table{
+    border:5px solid red;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Employee detail form</h1>
+<table>
+    <thead>
+    <th>Employee name</th>
+    <th>Employee number</th>
+    <th>Employee salary</th>
+    <th>Employee technology</th>
+    <th>Employee address</th>
+    <th>Employee mailid</th>
+    <th>Employee mobile number</th>
+    </thead>
+    {% for emp in employee_list %}
+    <tr>
+        <td>{{emp.ename}}</td>
+        <td>{{emp.eno}}</td>
+        <td>{{emp.esal}}</td>
+        <td>{{emp.etech}}</td>
+        <td>{{emp.eaddr}}</td>
+        <td>{{emp.email}}</td>
+        <td>{{emp.emobileno}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
